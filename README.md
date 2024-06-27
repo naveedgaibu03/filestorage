@@ -52,53 +52,6 @@ Database Configuration
       file located in src/main/resources.
       
 
-Project Structure:
-filestorage/
-├── .idea/
-├── .mvn/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── filestorage/
-│   │   │   │   ├── config/
-│   │   │   │   │   ├── SecurityConfig.java
-│   │   │   │   ├── controller/
-│   │   │   │   │   ├── FileController.java
-│   │   │   │   │   ├── UserController.java
-│   │   │   │   ├── model/
-│   │   │   │   │   ├── File.java
-│   │   │   │   │   ├── User.java
-│   │   │   │   ├── repository/
-│   │   │   │   │   ├── FileRepository.java
-│   │   │   │   │   ├── UserRepository.java
-│   │   │   │   ├── service/
-│   │   │   │   │   ├── FileService.java
-│   │   │   │   │   ├── UserService.java
-│   │   │   │   ├── FilestorageApplication.java
-│   │   ├── resources/
-│   │   │   ├── css/
-│   │   │   │   ├── bootstrap.min.css
-│   │   │   │   ├── styles.css
-│   │   │   ├── js/
-│   │   │   │   ├── bootstrap.min.js
-│   │   │   │   ├── jquery.slim.min.js
-│   │   │   ├── templates/
-│   │   │   │   ├── files.html
-│   │   │   │   ├── login.html
-│   │   │   │   ├── register.html
-│   │   │   │   ├── upload.html
-│   │   │   ├── application.properties
-│   │   │   ├── data.sql
-├── test/
-├── target/
-├── .gitignore
-├── HELP.md
-├── LICENSE
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-├── README.md
-
 
 
 1. How to Use
