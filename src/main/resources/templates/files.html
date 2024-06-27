@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>File List</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Your Files</h1>
+    <div class="mb-3 text-right">
+        <a th:href="@{/files/upload}" class="btn btn-primary">Upload New File</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Size</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="file : ${files}">
+            <td th:text="${file.name}">File Name</td>
+            <td th:text="${file.contentType}">File Type</td>
+            <td th:text="${file.size}">File Size</td>
+            <td>
+                <a th:href="@{/files/download/{id}(id=${file.id})}" class="btn btn-secondary">Download</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script th:src="@{/js/jquery.slim.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
